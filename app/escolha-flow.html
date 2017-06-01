@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./css/metro.min.css" rel="stylesheet">
+    <link href="css/metro-icons.css" rel="stylesheet">
+    <link href="css/metro-responsive.css" rel="stylesheet">
+    <script>window.$ = window.jQuery = require('./js/jquery-3.2.1.min.js');</script>
+    <script src="./js/metro.min.js"></script>
+</head>
+<body style="width:100%">
+	<button class="button success block-shadow-success text-shadow" onclick="analisador()">Diagrama Analisador</button>
+	<button class="button warning block-shadow-warning text-shadow" onclick="condicao()">Diagrama MIC</button>
+	<button class="button danger block-shadow-danger text-shadow" onclick="horario()">Diagrama Horário</button>
+
+	<div id="cond" style="display: none;margin-top: 20px;">
+		<div class="input-control modern text" style="font-size: smaller;width: 48%;">
+		    <input type="text">
+		    <span class="label">Nome da Mic</span>
+		    <span class="informer">Informe o nome da Mic inicial</span>
+		    <span class="placeholder">Digite o nome da mic inicial</span>
+		</div>
+		<div class="input-control modern text" style="font-size: smaller;margin-left: 2%;width: 48%;">
+		    <input type="text">
+		    <span class="label">Nome da Mic</span>
+		    <span class="informer">Informe o nome da Mic Final</span>
+		    <span class="placeholder">Digite o nome da mic final</span>
+		</div>
+		 <br><br>
+		<button class="button warning block-shadow-warning text-shadow" onclick="condicao()">Gerar Fluxo</button>
+	</div>
+
+	<div id="horario" style="display: none;margin-top: 20px;">
+		<label>Informe o horário inicial:</label>
+		<input id="settime" type="time" step="1" />
+		<label>Informe o horário final:</label>
+		<input id="settime" type="time" step="1" />
+		<br><br>
+		<button class="button danger block-shadow-danger text-shadow" onclick="horario()">Gerar fluxo</button>
+	</div>
+	<script>
+		    function horario(){
+		    	$("#horario").css("display", "block");
+		    	$("#cond").css("display", "none");
+		    }
+
+		    function condicao(){
+		    	$("#horario").css("display", "none");
+		    	$("#cond").css("display", "block");
+		    }
+
+		    function analisador(){
+		    	$("#conteudo").load("flow.html");
+		    }
+	</script>
+</body>
+</html>
