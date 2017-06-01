@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="./css/metro.min.css" rel="stylesheet">
+    <link href="css/metro-icons.css" rel="stylesheet">
+    <link href="css/metro-responsive.css" rel="stylesheet">
+    <link href="css/rastreador.css" rel="stylesheet">
+    <script>window.$ = window.jQuery = require('./js/jquery-3.2.1.min.js');</script>
+    <script src="./js/metro.min.js"></script>
+	<style>
+		.fixed-table {
+    /* magic */
+    width: 100%;
+    table-layout: fixed;
+
+    /*not really necessary, removes extra white space */
+    border-collapse: collapse;
+    border-spacing: 0;
+    border: 0;
+}
+.fixed-table td {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+	font-size: smaller;
+}
+
+.nowrap {
+    /* used to keep buttons' text in a single line,
+     * remove this class to allow natural line-breaking.
+     */
+    white-space: nowrap;
+}
+	</style>
+</head>
+<body>
+		<div >
+			<label>Arquivo de debug:</label>
+			<div class="input-control text" data-role="input" style="width:100%;">
+				<input type="text" style="border-color: black;" id="path">
+				<div class="button-group">
+					<button class="button search"><span class="mif-floppy-disk"></span></button>
+					<button class="button search" onclick="openFile()" id="path"><span class="mif-search"></span></button>
+				</div>
+			</div>
+		</div>
+		<br><br>
+		<div>
+			<button class="button loading-pulse lighten primary" style="width: 48%;border-radius: 5px;" onclick="observador()">Observar</button>
+			<button class="button loading-cube lighten danger" style="width: 48%;border-radius: 5px;" onclick="lerArquivo()">Analisar</button>
+		</div>
+		<div id="processamento" style="display:none";>
+		<button class='toolbar-button' onclick="parar()">
+        	<span class='mif-stop fg-red'> </span>
+		</button>
+		
+			<div data-role="preloader" data-type="metro" data-style="dark" style="margin: 30px  auto" class="preloader-metro dark-style"></div>
+		</div>
+
+			<label><b>Erros encontrados: </b></label><label id="lblQuantidade" style="color:red;font-weight:bolder;"></label>
+			<table class="table fixed-table" id="tabela">
+			    <thead>
+			        <tr>
+			            <th class="sortable-column">Linha</th>
+			            <th class="sortable-column sort-asc">Tipo do Erro</th>
+			            <th class="sortable-column sort-desc">Data/Hora</th>
+			            <th class="sortable-column sort-desc">Nome da Mic</th>
+			            <th class="sortable-column sort-desc"></th>
+			        </tr>
+			    </thead>
+			    <tbody id="corpoTabela">
+			        
+			   </tbody>
+			</table>
+	 <script src="./js/rastreador-arquivos.js"></script>
+</body>
+</html>

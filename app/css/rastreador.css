@@ -1,0 +1,8 @@
+.search{
+	border-color: black;
+}
+
+.search:hover{
+	background-color: black;
+	color:white;
+}

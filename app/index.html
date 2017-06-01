@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ratreador</title>
+    <link href="./css/metro.min.css" rel="stylesheet">
+    <link href="css/metro-icons.css" rel="stylesheet">
+    <link href="css/metro-responsive.css" rel="stylesheet">
+    <script>window.$ = window.jQuery = require('./js/jquery-3.2.1.min.js');</script>
+    <script src="./js/metro.min.js"></script>
+</head>
+
+<body>
+<div style="width: 25%; float: left;">
+        <ul class="v-menu">
+    <li class="menu-title">Arquivos de debug</li>
+    <li><a href="#" onclick="rastrear()"><span class="mif-local-service icon"></span> Rastreador</a></li>
+    <li class="divider"></li>
+    <li class="menu-title">Controle de erros</li>
+    <li><a href="#" onclick="recentes()"><span class="mif-event-available icon"></span> Recentes</a></li>
+    <li><a href="#" onclick="ignorados()"><span class="mif-warning icon"></span> Ignorados</a></li>
+    <li class="divider"></li>
+    <li class="menu-title">Informações adicionais</li>
+    <li><a href="#" onclick="fluxo()"><span class="mif-tree icon"></span> Fluxo</a></li>
+</ul>
+</div>
+ <div id="conteudo" style="width: 75%; float: left;padding: 15px;">
+  
+</div>
+
+   <script>
+   	  function rastrear(){
+   	  	$("#conteudo").load("rastreador.html");
+   	  }
+
+   	   function recentes(){
+   	  	$("#conteudo").load("recentes.html");
+   	  }
+
+   	   function ignorados(){
+   	  	$("#conteudo").load("ignorados.html");
+   	  }
+
+   	   function fluxo(){
+   	  	$("#conteudo").load("flow.html");
+   	  }
+   </script>
+</body>
+
+
+
+</html>

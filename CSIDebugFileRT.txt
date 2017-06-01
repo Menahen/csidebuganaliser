@@ -1,0 +1,98 @@
+
+
+[29/05/2017 15:20:59 - main] com.csi.services.exceptions.ExcecaoObjetoInexistente: EX05
+	at com.csi.components.cmos.GerenciadorCMOSComponente.leObjetoDoArquivo(GerenciadorCMOSComponente.java:7171)
+	at com.csi.components.cmos.GerenciadorCMOSComponente.inicializaDados(GerenciadorCMOSComponente.java:3528)
+	at com.csi.components.cmos.pos.GerenciadorCMOS.inicializaDados(GerenciadorCMOS.java:5432)
+	at com.csi.components.ControladorPerifericos.inicializaPerifericos(ControladorPerifericos.java:1292)
+	at com.csi.components.pointOfSale.StartupPDV.inicializa(StartupPDV.java:1399)
+	at com.csi.components.pointOfSale.StartupPDV.main(StartupPDV.java:3215)
+
+
+[29/05/2017 15:20:59 - main] com.csi.services.exceptions.ExcecaoObjetoInexistente: EX05
+	at com.csi.components.cmos.GerenciadorCMOSComponente.leObjetoDoArquivo(GerenciadorCMOSComponente.java:7171)
+	at com.csi.components.cmos.GerenciadorCMOSComponente.inicializaDados(GerenciadorCMOSComponente.java:3550)
+	at com.csi.components.cmos.pos.GerenciadorCMOS.inicializaDados(GerenciadorCMOS.java:5432)
+	at com.csi.components.ControladorPerifericos.inicializaPerifericos(ControladorPerifericos.java:1292)
+	at com.csi.components.pointOfSale.StartupPDV.inicializa(StartupPDV.java:1399)
+	at com.csi.components.pointOfSale.StartupPDV.main(StartupPDV.java:3215)
+
+
+[29/05/2017 15:20:59 - main] com.csi.services.exceptions.ExcecaoObjetoInexistente: EX05
+	at com.csi.components.cmos.GerenciadorCMOSComponente.leObjetoDoArquivo(GerenciadorCMOSComponente.java:7171)
+	at com.csi.components.cmos.GerenciadorCMOSComponente.inicializaDados(GerenciadorCMOSComponente.java:3568)
+	at com.csi.components.cmos.pos.GerenciadorCMOS.inicializaDados(GerenciadorCMOS.java:5432)
+	at com.csi.components.ControladorPerifericos.inicializaPerifericos(ControladorPerifericos.java:1292)
+	at com.csi.components.pointOfSale.StartupPDV.inicializa(StartupPDV.java:1399)
+	at com.csi.components.pointOfSale.StartupPDV.main(StartupPDV.java:3215)
+
+
+[29/05/2017 15:20:59 - main] com.csi.services.exceptions.ExcecaoObjetoInexistente: EX05
+	at com.csi.components.cmos.GerenciadorCMOSComponente.leObjetoDoArquivo(GerenciadorCMOSComponente.java:7171)
+	at com.csi.components.cmos.GerenciadorCMOSComponente.inicializaDados(GerenciadorCMOSComponente.java:3885)
+	at com.csi.components.cmos.pos.GerenciadorCMOS.inicializaDados(GerenciadorCMOS.java:5432)
+	at com.csi.components.ControladorPerifericos.inicializaPerifericos(ControladorPerifericos.java:1292)
+	at com.csi.components.pointOfSale.StartupPDV.inicializa(StartupPDV.java:1399)
+	at com.csi.components.pointOfSale.StartupPDV.main(StartupPDV.java:3215)
+
+
+[29/05/2017 15:20:59 - main] com.csi.services.exceptions.ExcecaoObjetoInexistente: EX05
+	at com.csi.components.cmos.GerenciadorCMOSComponente.leObjetoDoArquivo(GerenciadorCMOSComponente.java:7171)
+	at com.csi.components.cmos.GerenciadorCMOSComponente.inicializaDados(GerenciadorCMOSComponente.java:3893)
+	at com.csi.components.cmos.pos.GerenciadorCMOS.inicializaDados(GerenciadorCMOS.java:5432)
+	at com.csi.components.ControladorPerifericos.inicializaPerifericos(ControladorPerifericos.java:1292)
+	at com.csi.components.pointOfSale.StartupPDV.inicializa(StartupPDV.java:1399)
+	at com.csi.components.pointOfSale.StartupPDV.main(StartupPDV.java:3215)
+
+
+[29/05/2017 15:20:59 - main] com.csi.services.exceptions.ExcecaoObjetoInexistente: EX05
+	at com.csi.components.cmos.GerenciadorCMOSComponente.leObjetoDoArquivo(GerenciadorCMOSComponente.java:7171)
+	at com.csi.components.cmos.GerenciadorCMOSComponente.inicializaDados(GerenciadorCMOSComponente.java:3933)
+	at com.csi.components.cmos.pos.GerenciadorCMOS.inicializaDados(GerenciadorCMOS.java:5432)
+	at com.csi.components.ControladorPerifericos.inicializaPerifericos(ControladorPerifericos.java:1292)
+	at com.csi.components.pointOfSale.StartupPDV.inicializa(StartupPDV.java:1399)
+	at com.csi.components.pointOfSale.StartupPDV.main(StartupPDV.java:3215)
+
+
+[29/05/2017 15:20:59 - main] com.csi.services.exceptions.ExcecaoObjetoInexistente: EX05
+	at com.csi.components.cmos.GerenciadorCMOSComponente.leObjetoDoArquivo(GerenciadorCMOSComponente.java:7171)
+	at com.csi.components.cmos.GerenciadorCMOSComponente.inicializaDados(GerenciadorCMOSComponente.java:3948)
+	at com.csi.components.cmos.pos.GerenciadorCMOS.inicializaDados(GerenciadorCMOS.java:5432)
+	at com.csi.components.ControladorPerifericos.inicializaPerifericos(ControladorPerifericos.java:1292)
+	at com.csi.components.pointOfSale.StartupPDV.inicializa(StartupPDV.java:1399)
+	at com.csi.components.pointOfSale.StartupPDV.main(StartupPDV.java:3215)
+
+
+[29/05/2017 15:20:59 - main] com.csi.services.exceptions.ExcecaoObjetoInexistente: EX05
+	at com.csi.components.cmos.GerenciadorCMOSComponente.leObjetoDoArquivo(GerenciadorCMOSComponente.java:7171)
+	at com.csi.components.cmos.GerenciadorCMOSComponente.inicializaDados(GerenciadorCMOSComponente.java:3963)
+	at com.csi.components.cmos.pos.GerenciadorCMOS.inicializaDados(GerenciadorCMOS.java:5432)
+	at com.csi.components.ControladorPerifericos.inicializaPerifericos(ControladorPerifericos.java:1292)
+	at com.csi.components.pointOfSale.StartupPDV.inicializa(StartupPDV.java:1399)
+	at com.csi.components.pointOfSale.StartupPDV.main(StartupPDV.java:3215)
+
+
+[29/05/2017 15:20:59 - main] com.csi.services.exceptions.ExcecaoObjetoInexistente: EX05
+	at com.csi.components.cmos.GerenciadorCMOSComponente.leObjetoDoArquivo(GerenciadorCMOSComponente.java:7171)
+	at com.csi.components.cmos.GerenciadorCMOSComponente.inicializaDados(GerenciadorCMOSComponente.java:3979)
+	at com.csi.components.cmos.pos.GerenciadorCMOS.inicializaDados(GerenciadorCMOS.java:5432)
+	at com.csi.components.ControladorPerifericos.inicializaPerifericos(ControladorPerifericos.java:1292)
+	at com.csi.components.pointOfSale.StartupPDV.inicializa(StartupPDV.java:1399)
+	at com.csi.components.pointOfSale.StartupPDV.main(StartupPDV.java:3215)
+
+
+[29/05/2017 15:20:59 - main] com.csi.services.exceptions.ExcecaoObjetoInexistente: EX05
+	at com.csi.components.cmos.GerenciadorCMOSComponente.leObjetoDoArquivo(GerenciadorCMOSComponente.java:7171)
+	at com.csi.components.cmos.GerenciadorCMOSComponente.inicializaDados(GerenciadorCMOSComponente.java:4254)
+	at com.csi.components.cmos.pos.GerenciadorCMOS.inicializaDados(GerenciadorCMOS.java:5432)
+	at com.csi.components.ControladorPerifericos.inicializaPerifericos(ControladorPerifericos.java:1292)
+	at com.csi.components.pointOfSale.StartupPDV.inicializa(StartupPDV.java:1399)
+	at com.csi.components.pointOfSale.StartupPDV.main(StartupPDV.java:3215)
+
+
+[29/05/2017 15:20:59 - main] com.csi.services.exceptions.ExcecaoObjetoInexistente: EX05
+	at com.csi.components.cmos.GerenciadorCMOSComponente.leObjetoDoArquivo(GerenciadorCMOSComponente.java:7171)
+	at com.csi.components.cmos.pos.GerenciadorCMOS.inicializaDados(GerenciadorCMOS.java:5455)
+	at com.csi.components.ControladorPerifericos.inicializaPerifericos(ControladorPerifericos.java:1292)
+	at com.csi.components.pointOfSale.StartupPDV.inicializa(StartupPDV.java:1399)
+	at com.csi.components.pointOfSale.StartupPDV.main(StartupPDV.java:3215)
