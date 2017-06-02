@@ -1,4 +1,4 @@
-const {app, BrowserWindow, Menu, ipcMain, dialog } = require("electron");
+const {app, BrowserWindow, Menu, ipcMain, dialog, Tray } = require("electron");
 const fs = require('fs');
 
 let mainWindow = null;
@@ -25,9 +25,26 @@ app.on('ready', () => {
             width: 900,
             height: 600
         });
+    tray = new Tray(__dirname + '/app/images/evil-cat.png');
+    let trayMenu = Menu.buildFromTemplate([
+            {label: 'Abrir', click:  function(){
+               mainWindow.show();
+             } },
+            {label: '', type: 'separator'},
+            {label: 'JavaScript', type: 'radio'},
+            {label: 'Java', type: 'radio'},
+            {label: 'Photoshop', type: 'radio'}
+        ]);
+    tray.setContextMenu(trayMenu);
     mainWindow.loadURL(`file://${__dirname}/app/index.html`);
     mainWindow.webContents.openDevTools();
+     mainWindow.on('minimize',function(event){
+        event.preventDefault()
+            mainWindow.hide();
+    });
 });
+
+
 
 app.on('window-all-closed', () => {
       app.quit();    
