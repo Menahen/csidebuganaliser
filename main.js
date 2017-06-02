@@ -36,6 +36,10 @@ app.on('ready', () => {
             {label: 'Photoshop', type: 'radio'}
         ]);
     tray.setContextMenu(trayMenu);
+    tray.on('click', () => {
+      mainWindow.show();
+    });
+
     mainWindow.loadURL(`file://${__dirname}/app/index.html`);
     mainWindow.webContents.openDevTools();
      mainWindow.on('minimize',function(event){
