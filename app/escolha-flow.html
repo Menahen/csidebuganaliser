@@ -38,6 +38,7 @@
 		<button class="button danger block-shadow-danger text-shadow" onclick="horario()">Gerar fluxo</button>
 	</div>
 	<script>
+	const notifier = require('electron-notifications');
 		    function horario(){
 		    	$("#horario").css("display", "block");
 		    	$("#cond").css("display", "none");
@@ -49,6 +50,11 @@
 		    }
 
 		    function analisador(){
+		    	notifier.notify('Calendar', {
+				  message: 'Event begins in 10 minutes',
+				  icon: 'http://cl.ly/J49B/3951818241085781941.png',
+				  buttons: ['Dismiss', 'Snooze'],
+				});
 		    	$("#conteudo").load("flow.html");
 		    }
 	</script>
