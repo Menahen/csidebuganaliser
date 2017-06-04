@@ -1,6 +1,7 @@
 const fs = require('fs');
 const readline = require('readline');
 const { ipcRenderer } = require('electron');
+const Analisador = require('./js/Analisador.js').Analisador;
 
 var ultimaLinha = function(){
 	return ultimaLinha.linha;
@@ -66,6 +67,8 @@ function lerArquivoObservador(path){
 
 function lerArquivo(){
 	var path = $("#path").val();
+	console.log(Analisador);
+	Analisador.lerArquivoDois(path);
 	limparFluxo();
 	limparTabela();
 	var rd = readline.createInterface({
