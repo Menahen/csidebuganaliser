@@ -39,21 +39,20 @@
 			<div class="input-control text" data-role="input" style="width:100%;">
 				<input type="text" style="border-color: black;" id="path">
 				<div class="button-group">
-					<button class="button search"><span class="mif-floppy-disk"></span></button>
-					<button class="button search" onclick="openFile()" id="path"><span class="mif-search"></span></button>
+					<button class="button search" id="salvar-arquivo"><span class="mif-floppy-disk"></span></button>
+					<button class="button search" id="abrir-arquivo" id="path"><span class="mif-search"></span></button>
 				</div>
 			</div>
 		</div>
 		<br><br>
 		<div>
-			<button class="button loading-pulse lighten primary" style="width: 48%;border-radius: 5px;" onclick="observador()">Observar</button>
-			<button class="button loading-cube lighten danger" style="width: 48%;border-radius: 5px;" onclick="lerArquivo()">Analisar</button>
+			<button class="button lighten primary" id="observador" style="width: 48%;border-radius: 5px;" >Observar</button>
+			<button class="button lighten danger" style="width: 48%;border-radius: 5px;" id="analisador-arquivo">Analisar</button>
 		</div>
 		<div id="processamento" style="display:none";>
-		<button class='toolbar-button' onclick="parar()">
-        	<span class='mif-stop fg-red'> </span>
+		<button class="button cycle-button" id="parar">
+			<span class='mif-stop'> </span>
 		</button>
-		
 			<div data-role="preloader" data-type="metro" data-style="dark" style="margin: 30px  auto" class="preloader-metro dark-style"></div>
 		</div>
 
@@ -72,6 +71,7 @@
 			        
 			   </tbody>
 			</table>
-	 <script src="./js/rastreador-arquivos.js"></script>
+	 <!--<script src="./js/rastreador-arquivos.js"></script> -->
+	 <script src="./js/rastreador-controller.js"></script>
 </body>
 </html>

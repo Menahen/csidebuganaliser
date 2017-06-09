@@ -23,7 +23,8 @@ app.on('ready', () => {
 
     mainWindow = new BrowserWindow({
             width: 900,
-            height: 600
+            height: 600,
+            icon: './app/images/evil-cat.png'
         });
     tray = new Tray(__dirname + '/app/images/evil-cat.png');
     let trayMenu = Menu.buildFromTemplate([
@@ -55,12 +56,13 @@ app.on('window-all-closed', () => {
  });
 
 ipcMain.on('abrir-arquivo', (event, arg) => {
-    console.log("Escutei o chamado");
     dialog.showOpenDialog(function (fileNames) {
-      if (fileNames === undefined) return;
-      var fileName = fileNames[0];
-      fs.readFile(fileName, 'utf-8', function (err, data) {
-        event.returnValue = fileName;
-      });
+      if (fileNames === undefined) event.returnValue = "";
+      if(fileNames != null && typeof(fileNames) !== 'undefined'){
+        var fileName = fileNames[0];
+        fs.readFile(fileName, 'utf-8', function (err, data) {
+          event.returnValue = fileName;
+        });
+      }
      }); 
 });

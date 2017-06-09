@@ -85,6 +85,7 @@ function lerArquivo(){
 		 var graph = {};
 		 gerarDadosFluxo(line);
 		 mic = obterNomeDaMic(line, mic);
+		 
    		 if(line.toLowerCase().indexOf("error") >= 0 || line.indexOf("IOException") >= 0 
    		 	|| line.indexOf("SDIException") >= 0){
    		 	countErro++;

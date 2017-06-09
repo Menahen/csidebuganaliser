@@ -5783,3 +5783,5 @@ java.io.IOException: [FTAPI] :: Can't connect to destination (host = '192.168.16
 	Novo Error7
 	Novo Error8
 	Novo Error9
+[29/05/2017 16:07:07]Exception
+[29/05/2017 11:00:07]Exception

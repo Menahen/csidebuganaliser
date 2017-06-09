@@ -11,6 +11,14 @@
   "license": "ISC",
   "dependencies": {
     "electron": "^1.6.1",
-    "electron-notifications": "^1.0.0"
+    "electron-notifications": "^1.0.0",
+    "node-notifier": "^5.1.2",
+    "promise": "^7.1.1",
+    "readline-promise": "0.0.1",
+    "sqlite3": "^3.1.8",
+    "tingodb": "^0.5.1"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^1.5.11"
   }
 }
